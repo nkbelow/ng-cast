@@ -3,19 +3,9 @@ angular.module('video-player')
 .controller('videoController', ['$scope', '$window', function($scope, $window) {
   $scope.videos = $window.exampleVideoData;
   $scope.video = $window.exampleVideoData[0];
-  $scope.noVideo = {
-    snippet: {
-      title: 'Please wait',
-      description: null,
-    }
-  };
-
-  $scope.setVideo = function() {
-    if ($scope.video === undefined) {
-      return false;
-    } else {
-      return true;
-    }
+  $scope.onClick = function(video) {
+    $scope.video = video;
+  
   };
 
 }])

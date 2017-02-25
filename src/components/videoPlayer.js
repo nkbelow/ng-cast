@@ -4,7 +4,6 @@ angular.module('video-player')
   return {
     scope: {
       video: '<',
-      getIframeSrc: '<'
     },
     templateUrl: 'src/templates/videoPlayer.html',
     controllerAs: 'ctrl',

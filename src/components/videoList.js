@@ -3,7 +3,8 @@ angular.module('video-player')
 .directive('videoList', function() {
   return {
     scope: {
-      videos: '<'
+      videos: '<',
+      onClick: '<'
     },
     templateUrl: 'src/templates/videoList.html',
     controllerAs: 'ctrl',
